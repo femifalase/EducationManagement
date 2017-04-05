@@ -8,7 +8,7 @@ package com.andychylde.commons;
  */
 public class GeoCode {
 
-    double latitude, longitude;
+    private double latitude, longitude;
 
     public GeoCode() {
     }
@@ -32,6 +32,6 @@ public class GeoCode {
     @Override
     public String toString() {
         return
-                "latitude: " + latitude + ", longitude: " + longitude;
+                "latitude: " + this.latitude + ", longitude: " + this.longitude;
     }
 }
