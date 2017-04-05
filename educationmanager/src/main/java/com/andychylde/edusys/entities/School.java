@@ -8,4 +8,8 @@ import com.andychylde.commons.LegalEntity;
  * @version 0.0.1
  */
 public interface School extends LegalEntity{
+
+    boolean admitStudent();
+    boolean updateStudentPerfomance();
+    boolean graduateStudent();
 }

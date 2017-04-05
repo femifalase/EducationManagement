@@ -22,4 +22,19 @@ public class JS_School implements School {
     public Collection<ContactDetail> getContactDetails() {
         return null;
     }
+
+    @Override
+    public boolean graduateStudent() {
+        return false;
+    }
+
+    @Override
+    public boolean admitStudent() {
+        return false;
+    }
+
+    @Override
+    public boolean updateStudentPerfomance() {
+        return false;
+    }
 }

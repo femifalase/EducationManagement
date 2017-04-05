@@ -28,4 +28,19 @@ public class SS_School implements School {
     public Map<Long, Employee> getEmployees() {
         return employees;
     }
+
+    @Override
+    public boolean graduateStudent() {
+        return false;
+    }
+
+    @Override
+    public boolean admitStudent() {
+        return false;
+    }
+
+    @Override
+    public boolean updateStudentPerfomance() {
+        return false;
+    }
 }

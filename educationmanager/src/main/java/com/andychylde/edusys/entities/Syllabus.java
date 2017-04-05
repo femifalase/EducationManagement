@@ -9,6 +9,15 @@ package com.andychylde.edusys.entities;
 public class Syllabus {
 
     private ExamBoard examBoard;
+    private Subject subject;
+
+    public Subject getSubject() {
+        return subject;
+    }
+
+    public void setSyllabus(Subject subject) {
+        this.subject = subject;
+    }
 
     public ExamBoard getExamBoard() {
         return examBoard;
