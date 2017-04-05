@@ -1,15 +1,20 @@
-package commons;
-
-import java.util.ArrayList;
-import java.util.Collection;
-
 /**
- * Created by FEMI Falase on 2017-04-05.
+ * Created by Femi Falase on 2017-04-05.
  *
  * @author Femi Falase
  * @version 0.0.1
  */
-public class Person {
+
+package com.andychylde.commons;
+
+import javax.persistence.Id;
+import java.util.ArrayList;
+import java.util.Collection;
+
+
+public class Person implements LegalEntity {
+    @Id
+    private Long personId;
     private Title title;
     private PersonName personName;
     private Gender gender;
@@ -24,12 +29,18 @@ public class Person {
         this.personName = personName;
     }
 
-    public Person(String firstName,String middleName,String familyName) {
+    public Person(String firstName, String middleName, String familyName) {
         this();
         this.personName = new PersonName(firstName, middleName, familyName);
     }
 
+    public Long getPersonId() {
+        return personId;
+    }
 
+    public void setPersonId(Long personId) {
+        this.personId = personId;
+    }
 
     public Title getTitle() {
         return title;
@@ -47,6 +58,7 @@ public class Person {
         this.personName = personName;
     }
 
+    @Override
     public Collection<ContactDetail> getContactDetails() {
         return contactDetails;
     }

@@ -1,18 +1,20 @@
-package commons;
+package com.andychylde.commons;
 
 /**
  * Created by FEMI on 2017-04-05.
+ *
  * @author Femi Falase
+ * @version 0.0.1
  */
 @ContactDetail(contactDetailType = ContactDetailType.EMAIL)
 public class Email {
 
     private String emailDomain;
-    private String emailxxxxxx;
+    private String emailPrefix;
 
-    public Email(String emailDomain, String emailxxxxxx) {
+    public Email(String emailDomain, String emailPrefix) {
         this.emailDomain = emailDomain;
-        this.emailxxxxxx = emailxxxxxx;
+        this.emailPrefix = emailPrefix;
     }
 
     public String getEmailDomain() {
@@ -23,17 +25,17 @@ public class Email {
         this.emailDomain = emailDomain;
     }
 
-    public String getEmailxxxxxx() {
-        return emailxxxxxx;
+    public String getemailPrefix() {
+        return emailPrefix;
     }
 
-    public void setEmailxxxxxx(String emailxxxxxx) {
-        this.emailxxxxxx = emailxxxxxx;
+    public void setemailPrefix(String emailPrefix) {
+        this.emailPrefix = emailPrefix;
     }
 
     @Override
     public String toString() {
-        return  emailxxxxxx+"@"+emailDomain;
+        return emailPrefix + "@" + emailDomain;
 
     }
 }

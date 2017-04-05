@@ -1,7 +1,8 @@
-package commons;
+package com.andychylde.commons;
 
 /**
  * Created by FEMI on 2017-04-05.
+ *
  * @author Femi Falase
  */
 public class PersonName {

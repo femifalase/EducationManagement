@@ -1,6 +1,6 @@
 package commons;
 
-import static org.junit.Assert.*;
+import com.andychylde.commons.Person;
 
 /**
  * Created by FEMI Falase on 2017-04-05.
