@@ -15,7 +15,7 @@ public class Address {
     private String addressLine3;
     private String addressTown;
     private String localGovernment;
-    private String state;
+    private State state;
     private String country = "Nigeria";
     private GeoCode geoCode;
 
@@ -51,11 +51,11 @@ public class Address {
         this.localGovernment = localGovernment;
     }
 
-    public String getState() {
+    public State getState() {
         return state;
     }
 
-    public void setState(String state) {
+    public void setState(State state) {
         this.state = state;
     }
 
