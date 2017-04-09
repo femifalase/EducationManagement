@@ -12,4 +12,5 @@ public interface School extends LegalEntity{
     boolean admitStudent();
     boolean updateStudentPerfomance();
     boolean graduateStudent();
+
 }
