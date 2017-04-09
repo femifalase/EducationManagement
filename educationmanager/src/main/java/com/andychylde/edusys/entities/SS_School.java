@@ -8,6 +8,7 @@ import java.util.Map;
 
 /**
  * Created by FEMI on 2017-04-05.
+ *
  * @author Femi Falase
  * @version 0.0.1
  */
@@ -20,7 +21,7 @@ public class SS_School implements School {
         this.employees = new HashMap<>();
     }
 
-    @Override
+
     public Collection<ContactDetail> getContactDetails() {
         return null;
     }
@@ -29,17 +30,16 @@ public class SS_School implements School {
         return employees;
     }
 
-    @Override
-    public boolean graduateStudent() {
+       public boolean graduateStudent() {
         return false;
     }
 
-    @Override
+
     public boolean admitStudent() {
         return false;
     }
 
-    @Override
+
     public boolean updateStudentPerfomance() {
         return false;
     }

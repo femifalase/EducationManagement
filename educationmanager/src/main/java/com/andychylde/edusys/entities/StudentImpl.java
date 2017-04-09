@@ -2,12 +2,14 @@ package com.andychylde.edusys.entities;
 
 import com.andychylde.commons.Person;
 
+import java.io.Serializable;
+
 /**
  * Created by Femi Falase on 2017-04-05.
  * @author Femi Falase
  * @version 0.0.1
  */
-public class StudentImpl implements Student{
+public class StudentImpl implements Student, Serializable{
 
     private Person person;
 

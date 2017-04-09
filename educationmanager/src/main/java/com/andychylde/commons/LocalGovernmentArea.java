@@ -43,7 +43,7 @@ public enum LocalGovernmentArea {
 
 
 	// Attributes
-		private State state;
+		State state;
 //		Constructor
 
 	private LocalGovernmentArea(State state) {

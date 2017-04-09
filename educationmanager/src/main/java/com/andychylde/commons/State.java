@@ -39,8 +39,8 @@ public enum State {
 	YOBE("Yobe",GeoPoliticalZone.NORTH_EAST), 
 	ZAMFARA("Gusau",GeoPoliticalZone.NORTH_WEST);
 	// Attributes
-	private String capital;
-	private GeoPoliticalZone gpz;
+	String capital;
+	GeoPoliticalZone gpz;
 
 	// Constructors
 	// private State() {
@@ -51,7 +51,7 @@ public enum State {
 	// this.capital = capital;
 	// }
 
-	private State(String capital, GeoPoliticalZone gpz) {
+	State(String capital, GeoPoliticalZone gpz) {
 		this.capital = capital;
 		this.gpz = gpz;
 	}
