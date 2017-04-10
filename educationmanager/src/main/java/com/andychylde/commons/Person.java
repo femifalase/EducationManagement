@@ -10,15 +10,19 @@ package com.andychylde.commons;
 import javax.persistence.Id;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Date;
 
+
+enum Title {MR, MRS, MISS}
 
 public class Person implements LegalEntity {
+    private final Collection<ContactDetail> contactDetails;
     @Id
     private Long personId;
     private Title title;
     private PersonName personName;
     private Gender gender;
-    private final Collection<ContactDetail> contactDetails;
+    private Date birthDate;
 
     public Person() {
         contactDetails = new ArrayList<>();
@@ -32,6 +36,14 @@ public class Person implements LegalEntity {
     public Person(String firstName, String middleName, String familyName) {
         this();
         this.personName = new PersonName(firstName, middleName, familyName);
+    }
+
+    public Date getBirthDate() {
+        return birthDate;
+    }
+
+    public void setBirthDate(Date birthDate) {
+        this.birthDate = birthDate;
     }
 
     public Long getPersonId() {
@@ -71,5 +83,3 @@ public class Person implements LegalEntity {
         this.gender = gender;
     }
 }
-
-enum Title {MR, MRS, MISS}

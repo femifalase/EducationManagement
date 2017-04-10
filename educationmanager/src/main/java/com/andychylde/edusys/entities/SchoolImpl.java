@@ -7,36 +7,39 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * EducationManager
  * Created by FEMI on 2017-04-05.
+ *
  * @author Femi Falase
- * @version 0.0.1 8:00 AM
+ * @version 0.0.1
  */
-public class JS_School implements School {
+
+public class SchoolImpl implements School {
 
     final Map<Long, Employee> employees;
 
-
-    public JS_School() {
+    public SchoolImpl() {
         this.employees = new HashMap<>();
     }
 
-    @Override
+
     public Collection<ContactDetail> getContactDetails() {
         return null;
     }
 
-    @Override
-    public boolean graduateStudent() {
+    public Map<Long, Employee> getEmployees() {
+        return employees;
+    }
+
+       public boolean graduateStudent() {
         return false;
     }
 
-    @Override
+
     public boolean admitStudent() {
         return false;
     }
 
-    @Override
+
     public boolean updateStudentPerfomance() {
         return false;
     }
